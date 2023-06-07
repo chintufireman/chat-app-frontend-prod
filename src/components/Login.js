@@ -56,9 +56,10 @@ const Login = () => {
 
 
   return (
+    
     <form>
-      <div className="container">
-        <div className="mb-3">
+      <div className="container bg-dark text-white" >
+        <div className="mb-3 mt-5">
           <label htmlFor="email" className="form-label">
             User Id
           </label>
@@ -88,7 +89,7 @@ const Login = () => {
         <button
           type="submit"
           onClick={handleSubmit}
-          className="btn btn-primary"
+          className="btn btn-primary mb-3"
         >
           Submit
         </button>

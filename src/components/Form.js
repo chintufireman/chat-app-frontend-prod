@@ -58,8 +58,8 @@ const Form = () => {
 
   return (
     <form>
-      <div className="container">
-        <div className="mb-3">
+      <div className="container text-white bg-dark">
+        <div className="mb-3 mt-3">
           <label htmlFor="email" className="form-label">
             User Id
           </label>
@@ -102,7 +102,7 @@ const Form = () => {
           />
         </div>
 
-        <button type="submit" onClick={handleSubmit}className="btn btn-primary">
+        <button type="submit" onClick={handleSubmit}className="btn btn-primary mb-3 mt-4">
           Submit
         </button>
       </div>

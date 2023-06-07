@@ -11,17 +11,29 @@ import Users from "./components/Users";
 function App() {
   return (
     <>
-        <Router>
-          <NavBar />
-          <Routes>
-            <Route exact path="/" element={<Login />} />
-            <Route exact path="/chat" element={<ShowChatBox />} />
-            <Route exact path="/signup" element={<Form />} />
-            <Route exact path="/login" element={<Login />} />
-            <Route exact path="/users" element={<Users />} />
-            <Route exact path="/message" element={<Messages />} />
-          </Routes>
-        </Router>
+      
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            backgroundSize: "cover",
+            backgroundImage:
+              'url("https://images4.alphacoders.com/116/1163362.jpg")',
+          }}
+        >
+          <Router>
+            <NavBar />
+            <Routes>
+              <Route exact path="/" element={<Login />} />
+              <Route exact path="/chat" element={<ShowChatBox />} />
+              <Route exact path="/signup" element={<Form />} />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/users" element={<Users />} />
+              <Route exact path="/message" element={<Messages />} />
+            </Routes>
+          </Router>
+        </div>
+     
     </>
   );
 }

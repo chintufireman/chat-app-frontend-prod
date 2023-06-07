@@ -15,7 +15,7 @@ const NavBar = () => {
   
 
   return (
-    <nav className="navbar navbar-expand navbar-light bg-light">
+    <nav className="navbar navbar-expand navbar-dark bg-dark" >
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           ChatApp

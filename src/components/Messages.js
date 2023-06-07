@@ -31,7 +31,8 @@ const Messages = () => {
     // console.log(state);
     localStorage.setItem("name2", state.data.name);
     localStorage.setItem("email2", state.data.email);
-  }, [state]);
+    console.log(message)
+  }, [state,message]);
 
   let sendMessage = async (e) => {
     e.preventDefault();
@@ -61,6 +62,8 @@ const Messages = () => {
       {},
       JSON.stringify(jsonOb)
     );
+
+    document.getElementById("msg").value="";
   };
 
   let showMessage = (msg) => {
